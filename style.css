@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+}
+
+header {
+  background: #2f855a;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#themeToggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 5px 10px;
+  background: #fff;
+  color: #2f855a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: #e6fffa;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+.articles {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.articles article {
+  flex: 1 1 30%;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.articles article a {
+  color: #2f855a;
+  text-decoration: none;
+}
+
+.about, .contact {
+  padding: 2rem;
+  background: #f0fff4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #2f855a;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #276749;
+}
+
+footer {
+  background: #2f855a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .articles {
+    flex-direction: column;
+  }
+
+  .articles article {
+    width: 100%;
+  }
+
+  #themeToggle {
+    top: 10px;
+    right: 10px;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .container, .about, .contact {
+    padding: 1rem;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+.dark-mode {
+  background: #1a202c;
+  color: #e2e8f0;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background: #2d3748;
+}
+
+.dark-mode .articles article,
+.dark-mode .about,
+.dark-mode .contact {
+  background: #2a2e38;
+  color: #e2e8f0;
+}
+
+.dark-mode button {
+  background: #38a169;
+}
+
+.dark-mode a {
+  color: #68d391;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoLiving – Sustainable Lifestyle</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1><i class="fa-leaf fa-solid"></i> EcoLiving</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h2>Live Sustainably. Love the Earth.</h2>
+      <p>Join us in exploring eco-friendly living practices that are good for you and the planet.</p>
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1000&q=80" alt="Eco-friendly living">
+    </section>
+
+    <section id="articles" class="articles">
+      <article>
+        <h3>5 Easy Ways to Reduce Plastic</h3>
+        <p>Start small by replacing everyday plastic items with reusable alternatives. <a href="#">Read more →</a></p>
+      </article>
+      <article>
+        <h3>DIY Natural Cleaning Products</h3>
+        <p>Make your own eco-friendly cleaners using vinegar, baking soda, and essential oils. <a href="#">Read more →</a></p>
+      </article>
+      <article>
+        <h3>Minimalism & Sustainability</h3>
+        <p>How owning less leads to consuming less and living more intentionally. <a href="#">Read more →</a></p>
+      </article>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About EcoLiving</h2>
+      <p>EcoLiving is a digital space that shares tips, guides, and stories to help you reduce your environmental impact. We believe that every step, no matter how small, contributes to a greener planet.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EcoLiving. Built with 🌿 in mind.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    });
+  </script>
+
+</body>
+</html>
